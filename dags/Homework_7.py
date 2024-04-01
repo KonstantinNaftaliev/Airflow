@@ -7,7 +7,7 @@ from airflow.operators.bash import BashOperator
 
 
 def get_weather_data(ti=None):
-    url = "https://api.openweathermap.org/data/3.0/onecall/timemachine?lat=27.855988&lon=34.31488&dt=1711976230&appid=05f3efdca4ee839f9d3ee929f45b4249"
+    url = "https://api.openweathermap.org/data/3.0/onecall/timemachine?lat=27.855988&lon=34.31488&dt=1711976230&appid=2457cc526d0d374b10e0343f56829b42"
     response = requests.request("GET", url)
 
     temperature = json.loads(response.text)['main']['temp'] - 273
