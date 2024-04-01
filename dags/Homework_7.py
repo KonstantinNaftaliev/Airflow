@@ -24,7 +24,7 @@ def choosing_description_weather(ti = None):
 
 Homework_7 = DAG( 'Homework_7_Naftaliev', description= 'Homework_7',
     schedule_interval= '0 12 * * *' ,
-    start_date= datetime(2024, 3, 29),
+    start_date= datetime(2024, 4, 01),
     catchup= False 
 )
 
